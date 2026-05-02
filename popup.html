@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- メイン画面 -->
+  <div id="main-view">
+    <header>
+      <div class="header-left">
+        <img src="icons/icon48.png" alt="" width="24" height="24">
+        <h1>QuickReply Templates</h1>
+      </div>
+      <button id="btn-add" class="btn-icon" title="New Template">+</button>
+    </header>
+
+    <div id="template-list"></div>
+
+    <footer>
+      <div id="quota-info"></div>
+      <div class="footer-actions">
+        <button id="btn-import" class="btn-sm">Import</button>
+        <button id="btn-export" class="btn-sm">Export</button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 編集モーダル -->
+  <div id="editor" class="hidden">
+    <header>
+      <h1 id="editor-title">New Template</h1>
+      <button id="btn-close" class="btn-icon" title="Close">&times;</button>
+    </header>
+
+    <div class="field">
+      <label for="tpl-name">Name</label>
+      <input type="text" id="tpl-name" maxlength="50" placeholder="e.g. Thank You Reply">
+    </div>
+
+    <div class="field">
+      <label for="tpl-trigger">Shortcut <span class="pro-badge" id="trigger-pro">Pro</span></label>
+      <input type="text" id="tpl-trigger" maxlength="30" placeholder="e.g. /thanks or ;ty">
+      <div class="field-hint">Type this in any text field to auto-insert the template.</div>
+    </div>
+
+    <div class="field">
+      <label for="tpl-content">Content</label>
+      <textarea id="tpl-content" rows="6" placeholder="Type your template text here..."></textarea>
+    </div>
+
+    <div class="variables">
+      <span class="var-label">Auto:</span>
+      <button class="var-btn" data-var="{date}">{date}</button>
+      <button class="var-btn" data-var="{time}">{time}</button>
+      <button class="var-btn" data-var="{today}">{today}</button>
+    </div>
+    <div class="variables">
+      <span class="var-label">Input:</span>
+      <button class="var-btn var-custom" data-var="{name}">{name}</button>
+      <button class="var-btn var-custom" data-var="{company}">{company}</button>
+      <button class="var-btn var-custom" data-var="{product}">{product}</button>
+      <button class="var-btn var-custom" data-var="{order}">{order}</button>
+    </div>
+    <div class="field-hint">You can also type any {variable} — e.g. {city}, {deadline}</div>
+
+    <div class="editor-actions">
+      <button id="btn-cancel" class="btn-secondary">Cancel</button>
+      <button id="btn-save" class="btn-primary">Save</button>
+    </div>
+  </div>
+
+  <!-- アップグレードモーダル -->
+  <div id="upgrade-modal" class="hidden">
+    <div class="upgrade-card">
+      <h2>Unlock Unlimited Templates</h2>
+      <p>Free plan is limited to 3 templates.<br>Upgrade once, use forever.</p>
+      <ul>
+        <li>Unlimited templates</li>
+        <li>Text shortcuts (/thanks → auto-insert)</li>
+        <li>Custom input variables ({name}, etc.)</li>
+        <li>Import / Export</li>
+      </ul>
+      <button id="btn-upgrade" class="btn-primary btn-wide">Upgrade — $4.99 one-time</button>
+      <button id="btn-upgrade-close" class="btn-secondary btn-wide">Maybe later</button>
+    </div>
+  </div>
+
+  <input type="file" id="import-file" accept=".json" class="hidden">
+  <script src="popup.js"></script>
+</body>
+</html>

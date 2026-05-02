@@ -1,0 +1,49 @@
+Stop retyping the same messages. QuickReply Templates lets you save, organize, and insert text templates in seconds — right from the right-click menu.
+
+Perfect for customer support agents, sales reps, e-commerce sellers, and anyone who sends repetitive messages every day.
+
+HOW IT WORKS
+1. Click the extension icon and create a template.
+2. Right-click any text field on any website.
+3. Select your template — it's inserted instantly.
+
+That's it. No account needed, no cloud sync, no data leaves your device.
+
+KEY FEATURES
+
+Right-Click Insert
+Right-click any text box, email composer, or chat input and pick a template from the menu. One click, done.
+
+Text Shortcuts (Pro)
+Assign a shortcut like /thanks or ;ty to any template. Type the shortcut in any text field and it auto-expands into the full text. No right-click needed.
+
+Smart Variables
+Use {date}, {time}, or {today} to auto-fill the current date and time. Create your own variables like {name}, {company}, {product}, or anything you want — the extension asks you to fill them in each time.
+
+Import & Export (Pro)
+Back up your templates as a JSON file. Share templates with your team. Move them between computers.
+
+Remember Values
+Turn on "Remember values" and the extension remembers what you typed for each variable, per template. Next time, it's pre-filled.
+
+FREE VS PRO
+
+Free (forever):
+- Up to 3 templates
+- Right-click insert
+- Auto variables ({date}, {time}, {today})
+
+Pro (one-time purchase):
+- Unlimited templates
+- Text shortcuts
+- Custom input variables
+- Import / Export
+
+PRIVACY
+All data stays on your device. No accounts, no servers, no analytics. See our privacy policy for details.
+
+KEYBOARD SHORTCUT
+Press Ctrl+Shift+Q (Cmd+Shift+Q on Mac) to quickly open the template manager.
+
+---
+Built for people who reply to the same questions every day. Save hours, not just minutes.

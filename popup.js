@@ -1,4 +1,5 @@
 const MAX_FREE = 3;
+const extpay = ExtPay('quickreply-templates');
 
 let templates = [];
 let isPaid = false;
@@ -19,6 +20,14 @@ async function loadData() {
   const data = await chrome.storage.local.get(['templates', 'isPaid']);
   templates = data.templates || [];
   isPaid = data.isPaid || false;
+
+  try {
+    const user = await extpay.getUser();
+    if (user.paid && !isPaid) {
+      isPaid = true;
+      chrome.storage.local.set({ isPaid: true });
+    }
+  } catch (_) {}
 }
 
 async function saveTemplates() {
@@ -124,8 +133,10 @@ function bindEvents() {
   });
 
   $('#btn-upgrade').addEventListener('click', () => {
-    // ExtensionPay統合後にここで決済ページを開く
-    alert('Payment integration coming soon.\nFor testing, templates are unlimited.');
+    extpay.openPaymentPage();
+  });
+
+  extpay.onPaid.addListener(() => {
     isPaid = true;
     chrome.storage.local.set({ isPaid: true });
     closeUpgrade();

@@ -1,37 +1,36 @@
-# CWS Screenshots Guide
+# CWS スクリーンショット撮影ガイド
 
-Size: 1280x800 px (recommended) or 640x400 px
-Format: PNG or JPEG
-Required: 1-5 screenshots
+サイズ: 1280x800 px（推奨）または 640x400 px
+形式: PNG または JPEG
+必要枚数: 1〜5枚
 
-## Recommended 5 shots
+## 推奨5枚
 
-### 1. Main popup (template list)
-- Open popup with 2-3 sample templates visible
-- Show quota info at bottom ("2/3 free templates")
-- Window size adjusted to show full popup
+### 1. メイン画面（テンプレート一覧）
+- サンプルテンプレートを2〜3個作った状態でポップアップを開く
+- フッターのクォータ表示（「2/3 free templates」）が見えるように
+- ポップアップ全体が映るようにウィンドウサイズを調整
 
-### 2. Right-click context menu
-- Right-click on a Gmail/email compose field
-- Show "QuickReply Templates" menu expanded with template names
-- Demonstrates core value: one-click insert
+### 2. 右クリックコンテキストメニュー
+- Gmail等のメール作成画面で右クリック
+- 「QuickReply Templates」メニューが展開された状態を撮影
+- コア機能「ワンクリックで挿入」が伝わるショット
 
-### 3. Editor with variables
-- Open editor with a template that uses variables
-- Example: "Hi {name}, thank you for your order #{order}..."
-- Show the variable buttons (Auto + Input rows)
+### 3. エディタ（変数付きテンプレート）
+- 変数を使ったテンプレートを編集中の画面
+- 例: 「Hi {name}, thank you for your order #{order}...」
+- 変数ボタン（Auto + Input）が見える状態
 
-### 4. Variable fill dialog
-- Show the floating "Fill in variables" panel on a webpage
-- Pre-filled with example values
-- Demonstrates the smart variable feature
+### 4. 変数入力ダイアログ
+- Webページ上に表示されるフローティングパネル
+- 入力欄に値が入った状態で撮影
+- 「Remember values」チェックボックスも見えるように
 
-### 5. Text expansion shortcut
-- Show a text field where user just typed "/thanks"
-- Or show the result after expansion
-- Demonstrates Pro feature: text shortcuts
+### 5. テキスト展開ショートカット
+- テキスト欄に「/thanks」と入力した直後、または展開後の状態
+- Pro機能であるテキストショートカットが伝わるショット
 
-## Tips
-- Use a clean browser profile (no other extensions visible)
-- Use Gmail or a recognizable email client as background
-- Add 2-3 realistic templates (e.g. "Thank You Reply", "Order Confirmation", "Meeting Follow-up")
+## 撮影のコツ
+- 他の拡張が見えないクリーンなブラウザプロファイルを使う
+- 背景はGmailなど認知度の高いメールクライアントが効果的
+- サンプルテンプレートは実用的な名前にする（例: 「Thank You Reply」「Order Confirmation」「Meeting Follow-up」）

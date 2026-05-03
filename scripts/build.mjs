@@ -8,6 +8,7 @@ const required = [
   'manifest.json',
   'background.js',
   'content.js',
+  'ExtPay.js',
   'popup.html',
   'popup.css',
   'popup.js',

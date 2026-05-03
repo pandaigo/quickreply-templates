@@ -1,3 +1,7 @@
+==============================
+ストア説明文（Description）
+==============================
+
 Stop retyping the same messages. QuickReply Templates lets you save, organize, and insert text templates in seconds — right from the right-click menu.
 
 Perfect for customer support agents, sales reps, e-commerce sellers, and anyone who sends repetitive messages every day.
@@ -7,7 +11,7 @@ HOW IT WORKS
 2. Right-click any text field on any website.
 3. Select your template — it's inserted instantly.
 
-That's it. No account needed, no cloud sync, no data leaves your device.
+That's it. No account needed, no cloud sync. All your templates stay on your device.
 
 KEY FEATURES
 
@@ -47,3 +51,63 @@ Press Ctrl+Shift+Q (Cmd+Shift+Q on Mac) to quickly open the template manager.
 
 ---
 Built for people who reply to the same questions every day. Save hours, not just minutes.
+
+
+==============================
+ホームページURL
+==============================
+https://pandaigo.github.io/quickreply-templates/
+
+==============================
+サポートURL
+==============================
+https://pandaigo.github.io/quickreply-templates/store/privacy-policy.html
+
+==============================
+単一用途の説明
+==============================
+This extension has a single purpose: to let users save text templates and insert them into text fields on any webpage via the right-click context menu or text shortcuts.
+
+==============================
+activeTab が必要な理由
+==============================
+Required to execute a script in the currently active tab when the user selects a template from the right-click context menu. The script inserts the selected template text into the focused text field. No access is requested until the user explicitly triggers an action.
+
+==============================
+contextMenus が必要な理由
+==============================
+Required to add a "QuickReply Templates" menu to the browser's right-click context menu. This menu appears only when the user right-clicks on an editable text field, allowing them to select and insert a saved template.
+
+==============================
+storage が必要な理由
+==============================
+Required to save the user's text templates and preferences (such as variable memory and paid status) locally on the device using chrome.storage.local. No data is sent to any external server.
+
+==============================
+scripting が必要な理由
+==============================
+Required to execute a content script in the active tab that inserts the selected template text into the focused text field. This script runs only when the user selects a template from the context menu.
+
+==============================
+ホスト権限が必要な理由（content_scripts の matches）
+==============================
+http://*/* and https://*/*:
+Required for the text expansion feature. A content script listens for user-defined shortcuts (e.g. /thanks) typed into text fields and replaces them with the corresponding template text. This only activates when the user has purchased the Pro upgrade and has configured shortcuts.
+
+https://extensionpay.com/*:
+Required by ExtensionPay (the payment provider) to detect when a payment is completed. The ExtPay.js content script runs on the ExtensionPay checkout page to communicate payment status back to the extension.
+
+==============================
+リモートコードを使用しているか
+==============================
+No. This extension does not use any remotely hosted code. All scripts are bundled within the extension package.
+
+==============================
+ユーザーデータの収集について
+==============================
+All templates and settings are stored locally on the user's device using chrome.storage.local. No analytics, tracking, or telemetry is included. No user accounts are required. The only external communication is with ExtensionPay (extensionpay.com) to process one-time payments and verify purchase status.
+
+==============================
+プライバシーポリシーのURL
+==============================
+https://pandaigo.github.io/quickreply-templates/store/privacy-policy.html

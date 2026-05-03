@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "QuickReply Templates — Text Expander",
+  "name": "QuickReply Templates — Canned Responses & Text Expander",
   "version": "1.0.0",
-  "description": "Save and insert text templates instantly. Right-click any text field to paste canned responses. Perfect for email, support, and sales. One-time purchase.",
+  "description": "Save and insert text templates instantly. Right-click any text field to paste canned responses. Perfect for email, support & sales.",
   "permissions": [
     "activeTab",
     "contextMenus",
@@ -31,6 +31,11 @@
       "matches": ["http://*/*", "https://*/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://extensionpay.com/*"],
+      "js": ["ExtPay.js"],
+      "run_at": "document_start"
     }
   ],
   "commands": {

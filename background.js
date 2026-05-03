@@ -1,4 +1,15 @@
+importScripts('ExtPay.js');
+const extpay = ExtPay('quickreply-templates');
+extpay.startBackground();
+
+extpay.onPaid.addListener(() => {
+  chrome.storage.local.set({ isPaid: true });
+});
+
 chrome.runtime.onInstalled.addListener(() => {
+  extpay.getUser().then(user => {
+    if (user.paid) chrome.storage.local.set({ isPaid: true });
+  });
   rebuildMenus();
 });
 

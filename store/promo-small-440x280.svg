@@ -1,28 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4A90D9"/>
-      <stop offset="100%" style="stop-color:#2D6CB5"/>
+      <stop offset="0%" style="stop-color:#1a2b5e"/>
+      <stop offset="100%" style="stop-color:#0f1b3d"/>
     </linearGradient>
   </defs>
 
   <!-- 背景 -->
   <rect width="440" height="280" fill="url(#bg)"/>
 
-  <!-- アイコン（吹き出し + 稲妻） -->
-  <g transform="translate(170, 40) scale(0.78)">
-    <rect x="4" y="4" width="120" height="120" rx="24" fill="white" opacity="0.15"/>
-    <path d="M28 32 h72 a8 8 0 0 1 8 8 v44 a8 8 0 0 1 -8 8 h-48 l-16 16 v-16 h-8 a8 8 0 0 1 -8 -8 v-44 a8 8 0 0 1 8 -8z" fill="white" opacity="0.95"/>
-    <path d="M68 42 L56 66 h12 L54 94 L78 62 h-12 L78 42z" fill="#4A90D9" stroke="#357ABD" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- 背景アイコン（吹き出し+稲妻、大きく薄く） -->
+  <g transform="translate(280, 60) scale(2.2)" opacity="0.06">
+    <path d="M28 32 h72 a8 8 0 0 1 8 8 v44 a8 8 0 0 1 -8 8 h-48 l-16 16 v-16 h-8 a8 8 0 0 1 -8 -8 v-44 a8 8 0 0 1 8 -8z" fill="white"/>
+    <path d="M68 42 L56 66 h12 L54 94 L78 62 h-12 L78 42z" fill="white"/>
   </g>
 
-  <!-- タイトル -->
-  <text x="220" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="white">QuickReply Templates</text>
+  <!-- ヘッドライン（1行、大きく） -->
+  <text x="32" y="110" font-family="system-ui, sans-serif" font-size="38" font-weight="800" fill="white">Reply in seconds.</text>
 
-  <!-- サブタイトル -->
-  <text x="220" y="220" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="white" opacity="0.85">Save &amp; insert text templates instantly</text>
+  <!-- サブコピー（やや大きめ） -->
+  <text x="32" y="148" font-family="system-ui, sans-serif" font-size="16" fill="white" opacity="0.7">Save templates. Insert with one click.</text>
 
-  <!-- バッジ -->
-  <rect x="155" y="238" width="130" height="24" rx="12" fill="white" opacity="0.2"/>
-  <text x="220" y="255" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="white">One-time purchase</text>
+  <!-- 右側: テンプレートカード2枚（シルエット、テキスト最小限） -->
+  <g transform="translate(280, 170)">
+    <!-- カード1 -->
+    <rect x="0" y="0" width="130" height="36" rx="6" fill="white" opacity="0.9"/>
+    <rect x="10" y="10" width="60" height="6" rx="3" fill="#1a2b5e" opacity="0.7"/>
+    <rect x="10" y="22" width="90" height="4" rx="2" fill="#1a2b5e" opacity="0.2"/>
+
+    <!-- カード2 -->
+    <rect x="10" y="44" width="130" height="36" rx="6" fill="white" opacity="0.7"/>
+    <rect x="20" y="54" width="55" height="6" rx="3" fill="#1a2b5e" opacity="0.7"/>
+    <rect x="20" y="66" width="85" height="4" rx="2" fill="#1a2b5e" opacity="0.2"/>
+  </g>
+
+  <!-- マウスカーソル -->
+  <g transform="translate(302, 208)">
+    <path d="M0 0 L0 18 L5 14 L9 22 L12 20 L8 12 L14 12 Z" fill="white" opacity="0.9"/>
+  </g>
+
+  <!-- 拡張名 -->
+  <text x="32" y="250" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="white" opacity="0.4">QuickReply Templates</text>
 </svg>

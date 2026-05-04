@@ -7,27 +7,55 @@
   <style>
     body {
       font-family: system-ui, -apple-system, sans-serif;
-      max-width: 600px;
+      max-width: 640px;
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 48px 20px;
       color: #1a1a2e;
-      text-align: center;
       line-height: 1.7;
     }
-    h1 { font-size: 22px; margin-bottom: 8px; }
-    p { color: #666; font-size: 15px; }
+    h1 { font-size: 24px; margin-bottom: 4px; text-align: center; }
+    .tagline { text-align: center; color: #666; font-size: 15px; margin-bottom: 32px; }
+    h2 { font-size: 17px; margin-top: 28px; margin-bottom: 8px; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    li { margin-bottom: 4px; font-size: 14px; color: #444; }
+    .price { text-align: center; margin: 28px 0; padding: 16px; background: #f8f9fb; border-radius: 8px; }
+    .price strong { font-size: 20px; }
+    .price span { color: #666; font-size: 13px; }
+    .cta { display: block; text-align: center; margin: 20px auto; padding: 12px 32px; background: #4a90d9; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 15px; width: fit-content; }
+    .cta:hover { background: #3a7bc8; }
     a { color: #4a90d9; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .links { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center; font-size: 13px; color: #888; }
+    .footer a { color: #888; margin: 0 8px; }
   </style>
 </head>
 <body>
   <h1>QuickReply Templates</h1>
-  <p>Save and insert text templates instantly.<br>Right-click any text field to paste canned responses.</p>
-  <div class="links">
-    <a href="https://chromewebstore.google.com/detail/quickreply-templates">Install from Chrome Web Store</a>
+  <p class="tagline">Save and insert text templates instantly.<br>Right-click any text field to paste canned responses.</p>
+
+  <a class="cta" href="https://chromewebstore.google.com/detail/quickreply-templates">Install from Chrome Web Store</a>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Right-click any text field to insert a saved template</li>
+    <li>Text shortcuts — type /thanks and it auto-expands</li>
+    <li>Smart variables — {name}, {date}, {company}, or any custom variable</li>
+    <li>Import & export templates as JSON</li>
+    <li>Works on any website — Gmail, Outlook, Zendesk, Shopify, and more</li>
+  </ul>
+
+  <h2>Pricing</h2>
+  <div class="price">
+    <strong>$7.99</strong> one-time purchase<br>
+    <span>Free version includes up to 3 templates. No subscription.</span>
+  </div>
+
+  <h2>Support</h2>
+  <p>For questions or issues, contact us at <a href="mailto:microforge.hq@gmail.com">microforge.hq@gmail.com</a></p>
+
+  <div class="footer">
     <a href="store/privacy-policy.html">Privacy Policy</a>
-    <a href="mailto:microforge.hq@gmail.com">Contact Support</a>
+    <a href="tokushoho.html">特定商取引法に基づく表記</a>
   </div>
 </body>
 </html>
